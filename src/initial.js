@@ -9,6 +9,7 @@ function initialize() {
 
     //create the background image
     const pic = new Image();
+    pic.classList.add('pizzaPic');
     pic.src = LePizza;
     content.appendChild(pic);
 

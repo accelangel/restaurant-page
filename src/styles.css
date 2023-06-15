@@ -33,12 +33,12 @@ h1 {
     gap: 3em;
 }
 
-.content img {
+.content .pizzaPic {
     height: 100%;
-    width: calc(125vw - 10vw);
-    object-fit: cover;
+    width: 100%;
     position: absolute;
     z-index: -1;
+    object-fit: cover;
 }
 
 .header {
@@ -74,25 +74,48 @@ h1 {
     border-bottom: 1px solid white;
 }
 
+.mainContainer {
+    height: fit-content;
+    width: fit-content;
+}
+
 .home {
     height: 400px;
     width: 400px;
     background-color: rgb(0, 0, 0, 0.6);
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.home img {
+    z-index: 1;
+    height: 15em;
+    width: 15em;
+    border-radius: 50%;
 }
 
 .menu {
-    height: 300px;
-    width: 300px;
+    height: 20em;
+    width: 25em;
     background-color: rgba(0, 145, 255, 0.6);
 }
 
 .contact {
-    height: 200px;
-    width: 200px;
-    background-color: rgba(0, 255, 51, 0.6);
+    height: 25em;
+    width: 35em;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2em;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.mainContainer {
-    height: fit-content;
-    width: fit-content;
+.contact img {
+    height: 75%;
+    object-fit: cover;
 }
