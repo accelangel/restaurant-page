@@ -7,7 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    .border: 1px solid limegreen;
+    font-family: sans-serif;
 }
 
 body {
@@ -33,7 +33,7 @@ h1 {
     gap: 3em;
 }
 
-.content .pizzaPic {
+.pizzaPic {
     height: 100%;
     width: 100%;
     position: absolute;
@@ -99,9 +99,67 @@ h1 {
 }
 
 .menu {
-    height: 20em;
-    width: 25em;
-    background-color: rgba(0, 145, 255, 0.6);
+    height: 25em;
+    width: 50em;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+}
+
+.menu .menuItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    padding: 0.5em;
+    text-align: center;
+}
+
+.menu:nth-child(1) .menuItem img {
+    height: 4em;
+}
+
+.dishBox1,
+.dishBox2,
+.dishBox3,
+.dishBox4,
+.dishBox5,
+.dishBox6 {
+    height: fit-content;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.dishBox1 img {
+    scale: 135%;
+    transform: translateX(0.15em);
+}
+.dishBox2 img {
+    scale: 90%;
+}
+.dishBox3 img {
+    scale: 145%;
+    transform: translateY(0.25em) translateX(-0.10em);
+}
+.dishBox4 img {
+    scale: 180%;
+}
+.dishBox5 img {
+    scale: 115%;
+}
+.dishBox6 img {
+    scale: 175%;
+    transform: translateY(-0.25em) translateX(0.15em);
+}
+
+
+.menuItem p {
+    font-size: 14px;
 }
 
 .contact {
@@ -118,4 +176,15 @@ h1 {
 .contact img {
     height: 75%;
     object-fit: cover;
+}
+
+.paraDiv {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    gap: 0.25em;
+}
+
+.paraDiv img {
+    height: 2em;
 }

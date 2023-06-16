@@ -8,10 +8,10 @@ function initialize() {
     content.classList.add('content');
 
     //create the background image
-    const pic = new Image();
+    const pic = document.createElement('img');
     pic.classList.add('pizzaPic');
     pic.src = LePizza;
-    content.appendChild(pic);
+    document.body.append(pic);
 
     //create header
     let header = document.createElement('div');

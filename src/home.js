@@ -1,4 +1,3 @@
-import { navigator } from './index'
 import chef from './chef.jpg'
 function populateHome() {
     let mainContainer = document.getElementById('mainContainer');
@@ -16,7 +15,7 @@ function populateHome() {
     let image = document.createElement('img');
     image.src = chef;
     homeContainer.appendChild(image);
-    
+
     let p3 = document.createElement('p');
     p3.textContent = 'Vieni e lascia che ti diamo da mangiare';
     homeContainer.appendChild(p3);
